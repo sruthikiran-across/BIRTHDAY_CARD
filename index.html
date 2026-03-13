@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Surprise ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
+</head>
+
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<!-- SCENE 1 -->
+<div id="scene1" class="scene dark">
+
+<img id="bouquet" src="photos/bunch.png">
+<p class="hint">Tap the bouquet 🌹</p>
+
+</div>
+
+
+<!-- SCENE 2 -->
+<div id="scene2" class="scene pink hidden">
+
+<div id="hearts-container"></div>
+
+<img id="rose" src="photos/rose.png">
+
+</div>
+
+
+<!-- HEART VIDEO -->
+<div id="sceneVideo" class="scene hidden">
+<p class="wait-text">PLEASE WAIT ...</p>
+
+
+<video id="heartVideo" muted playsinline>
+<source src="photos/background.mp4" type="video/mp4">
+</video>
+
+</div>
+
+
+<!-- ENDING VIDEO + ENVELOPE -->
+<div id="sceneEnding" class="scene hidden">
+
+<video id="endingVideo" muted playsinline>
+<source src="photos/ending.mp4" type="video/mp4">
+</video>
+
+<div class="envelope-container" onclick="openEnvelope()">
+
+<p class="open-text">Open me 💌</p>
+
+<video id="video" muted autoplay loop playsinline>
+<source src="photos/envelope.mp4" type="video/mp4">
+</video>
+
+<canvas id="canvas"></canvas>
+
+</div>
+
+</div>
+
+
+<!-- PHOTO WALL -->
+<div id="scene4" class="scene hidden">
+<div id="roses-container"></div>
+
+<div class="message">
+<h1>Happy Birthday ❤️</h1>
+<p>You make every moment beautiful.</p>
+</div>
+
+<div class="photo-wall" id="photoWall"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
